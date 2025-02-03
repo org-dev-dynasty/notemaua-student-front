@@ -13,7 +13,8 @@ import { Footer } from '@/components/Footer';
 
 WebBrowser.maybeCompleteAuthSession(); // Finalizar sessões incompletas
 
-const authorizationEndpoint = `https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize`;
+const tenantId = process.env.EXPO_PUBLIC_AZURE_TENANT_ID;
+const authorizationEndpoint = `https://login.microsoftonline.com/${tenantId}/oauth2/v2.0/authorize`;
 
 export default function Index() {
     const [loading, setLoading] = useState(false);
