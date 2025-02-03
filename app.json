@@ -10,7 +10,8 @@
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.notemaua.app",
+      // "bundleIdentifier": "com.notemaua.app",
+      "bundleIdentifier": "br.maua.notemaua",
       "buildNumber": "1"
     },
     "android": {
@@ -18,11 +19,12 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.notemaua.app",
+      // "package": "com.notemaua.app",
+      "package": "br.maua.notemaua",
       "permissions": [
         "android.permission.CAMERA",
         "android.permission.RECORD_AUDIO"
-      ],
+      ]
     },
     "web": {
       "bundler": "metro",
